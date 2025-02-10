@@ -1145,6 +1145,7 @@ GameObject:
   - component: {fileID: 818324270}
   - component: {fileID: 818324271}
   - component: {fileID: 818324272}
+  - component: {fileID: 818324273}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -1220,18 +1221,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1168579218}
-        m_TargetAssemblyTypeName: SettingsPanel, Assembly-CSharp
-        m_MethodName: ToggleMusicVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 818324272}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: PlayOneShot
@@ -1342,6 +1331,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &818324273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818324269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39922c2593dbee74ead6a391fb0e4ca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mixer: {fileID: 2237117306001430403, guid: fb2bf3bc45269cc4592c0ffa92c82556, type: 2}
 --- !u!1 &834120669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1921,8 +1923,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1168579215}
   - component: {fileID: 1168579217}
-  - component: {fileID: 1168579216}
   - component: {fileID: 1168579218}
+  - component: {fileID: 1168579216}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -2017,6 +2019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1172009031}
   - component: {fileID: 1172009032}
+  - component: {fileID: 1172009033}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -2096,19 +2099,20 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1168579218}
-        m_TargetAssemblyTypeName: SettingsPanel, Assembly-CSharp
-        m_MethodName: SetUIVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1172009033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172009030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b171a25c24fcd4aa430e55a0fb1ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mixer: {fileID: -8168765858647600466, guid: fb2bf3bc45269cc4592c0ffa92c82556, type: 2}
 --- !u!1 &1225576923
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,6 +2790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469722312}
   - component: {fileID: 1469722313}
+  - component: {fileID: 1469722314}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -2865,19 +2870,20 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1168579218}
-        m_TargetAssemblyTypeName: SettingsPanel, Assembly-CSharp
-        m_MethodName: SetMasterVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1469722314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469722311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b171a25c24fcd4aa430e55a0fb1ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mixer: {fileID: 24300002, guid: fb2bf3bc45269cc4592c0ffa92c82556, type: 2}
 --- !u!1 &1478848851
 GameObject:
   m_ObjectHideFlags: 0
@@ -3658,6 +3664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1915001585}
   - component: {fileID: 1915001586}
+  - component: {fileID: 1915001587}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -3737,19 +3744,20 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1168579218}
-        m_TargetAssemblyTypeName: SettingsPanel, Assembly-CSharp
-        m_MethodName: SetMusicVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1915001587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915001584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b171a25c24fcd4aa430e55a0fb1ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mixer: {fileID: 2237117306001430403, guid: fb2bf3bc45269cc4592c0ffa92c82556, type: 2}
 --- !u!1 &1920844979
 GameObject:
   m_ObjectHideFlags: 0
